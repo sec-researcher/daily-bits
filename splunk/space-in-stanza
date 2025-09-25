@@ -1,13 +1,17 @@
 Using spaces in splunk config file stanza does not work on linux and windows, for example in props.conf:
+```ini
 [ not_working_stanza ]
 CHARSET=UTF-8
 MAX_TIMESTAMP_LOOKAHEAD=30
 SHOULD_LINEMERGE=false
 pulldown_type=true
+```
 
 but without any spaces it will work like a charm:
+```ini
 [working_stanza]
 CHARSET=UTF-8
 MAX_TIMESTAMP_LOOKAHEAD=30
 SHOULD_LINEMERGE=false
 pulldown_type=true
+```
