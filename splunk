@@ -1,0 +1,13 @@
+Using psaces in splunk config file stanza does not work in linux and windows, for example:
+[ not_working_stanza ]
+CHARSET=UTF-8
+MAX_TIMESTAMP_LOOKAHEAD=30
+SHOULD_LINEMERGE=false
+pulldown_type=true
+
+but without any spaces it will work like a charm:
+[working_stanza]
+CHARSET=UTF-8
+MAX_TIMESTAMP_LOOKAHEAD=30
+SHOULD_LINEMERGE=false
+pulldown_type=true
